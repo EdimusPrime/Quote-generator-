@@ -30,6 +30,7 @@ $(document).ready(function() {
 	function movieQuotes(){
 	
 		$(".main").css("background-image", "url('http://img09.deviantart.net/5f7f/i/2015/052/1/a/cinema_background_by_gazlan_sahmeiy-d8j17be.jpg')");
+		// $('.main').fadeIn();
 
 			var movQuoteList=[
 				[ ["I'm gonna make him an offer he can't refuse."], ["The Godfather"]],
@@ -139,7 +140,6 @@ $(document).ready(function() {
 				[ ["T to the R-uh-O-Y, how did you and I meet?/In front of Big Lou's, fighting in the street/But only you saw what took many time to see/I dedicate this to you for believing in me."], ["C.L. Smooth"]],
 				[ ["And even after all my logic and my theory/I add a &#34;Motherfucker&#34; so you ignorant niggas hear me."], ["The Fugees"]],
 				[ ["First ship 'em dope and let 'em deal to brothers/Give 'em guns, step back and watch 'em kill each other/'It's time to fight back,' that's what Huey said/Two shots in the dark, now Huey's dead."], ["2Pac"]],
-				[ ["See it's easy as cake, simple as whistling Dixie/While I'm waving the pistol at sixty Christians against me/Go to war with the Mormons, take a bath with the Catholics/In holy water, no wonder they tried to hold me under longer"], ["Eminem"]],
 				[ ["Elvis was a hero to most/But he never meant shit to me. You see/Straight up racist that sucker was, simple and plain/Motherfuck him and John Wayne."], ["Public Enemy"]],
 				[ ["We used to fuss when the landlord dissed us/No heat. Wonder why Christmas missed us/Birthdays was the worst days/Now we sip champagne when we thirst-ay"], ["Notorious B.I.G."]],
 				[ ["I start to think, and then I sink/Into the paper like I was ink/When I'm writing, I'm trapped in between the lines/I escape when I finish the rhyme."], ["Rakim"]],
