@@ -9,15 +9,17 @@ $('.btn').click(function(){
 // function decides which genre of quotes to display
 
 function getGenre(){
-	var genre =Math.floor(Math.random() * 300);
+	var genre =Math.floor(Math.random() * 400);
 
 	if (genre<101){
 		movieQuotes();
 
 	} else if (genre>100 && genre <201){
 		vidQuotes();
-	} else {
+	} else if (genre>200 && genre <301){
 		songQuotes();
+	} else {
+		tvQuotes();
 	}
 }
 
@@ -45,6 +47,10 @@ function movieQuotes(){
 		[ ["Hey, where are da white women at?"], ["Blazin' Saddles"]],
 		[ ["Y'know, I could eat a peach for hours."], ["Face/Off"]],
 		// [ ["Quote1"], ["Author1"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
 		// [ ["Quote3"], ["Author3"]],
 		// [ ["Quote3"], ["Author3"]],
 		// [ ["Quote3"], ["Author3"]],
@@ -84,6 +90,10 @@ function vidQuotes(){
 		// [ ["Quote3"], ["Author3"]],
 		// [ ["Quote3"], ["Author3"]],
 		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
 		];
 
 		var vidQuote =Math.floor(Math.random() * vidQuoteList.length);
@@ -117,7 +127,14 @@ function songQuotes(){
 		[ ["I don't work for free, I am barely giving a fuck away"], ["Run The Jewels"]],
 		[ ["No hocus pocus, you simple suckas deserve to know this. Top of the morning, my fist to your face is fucking Folgers"], ["Run The Jewels"]],
 		[ ["Let your mind and your soul be free Work to shine meet your goal believe Spread that kind of L-O-V-E Take some time off the lonely"], ["Blackalicious"]],
-
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
 	];
 
 		var songQuote =Math.floor(Math.random() * songQuoteList.length);
@@ -126,8 +143,43 @@ function songQuotes(){
 		$('.author').html('-'+songQuoteList[songQuote][1]);
 }
 
+function tvQuotes(){
+
+	$(".main").css("background-image", "url('http://cdn.wallpapersafari.com/26/59/ZfgFil.jpg')");
+	var tvQuoteList=[
 
 
+// [ ["Quote3"], ["Author3"]],
+		[ ["You can't live your life according to maybes"], ["Orange Is The New Black"]],
+		[ ["I wish there was a way to know you're in the good old days before you've actually left them."], ["The Offics"]],
+		[ ["To exist is to survive unfair choices"], ["The OA"]],
+		[ ["You can't cling on to the past, because no matter how tightly you hold on, it's already gone"], ["How I Met Your Mother"]],
+		[ ["The way I see it, every life is a pile of good things and bad things. The good things don't always soften the bad things, but vice-versa, the bad things don't necessarily spoil the good things and make them unimportant."], ["Doctor Who"]],
+		[ ["It's not that simple. You know what makes a good person good? When a good person does something bad, they own up to it. They try to learn something from it and they move on."], ["Parks and Recreation"]],
+		[ ["He’s trying to force you to like normal things. And you shouldn’t like things because people tell you you’re supposed to"], ["Stranger Things"]],
+		[ ["Mourn the losses because they are many. But celebrate the victories, because they are few."], ["Queer as Folk"]],
+		[ ["Nothing in this world that's worth having comes easy"], ["Scrubs"]],
+		[ ["Never forget what you are, the rest of the world will not. Wear it like armour and it can never be used to hurt you."], ["Game of Thrones"]],
+		[ ["If you look for the light you will often find it. But if you look for the dark, it is all you will ever see"], ["The Legend of Korra"]],
+		[ ["A dream is an answer to a question we haven't learned how to ask"], ["The X-Files"]],
+		[ ["This is just a moment in time...Step aside and let it happen"], ["Firefly"]],
+		[ ["And when you find yourself lost in the darkness and despair, remember it’s only in the black of night you see the stars."], ["One Tree Hill"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+		// [ ["Quote3"], ["Author3"]],
+	];
+
+		var tvQuote =Math.floor(Math.random() * tvQuoteList.length);
+
+		$('.quote').html('"' + tvQuoteList[tvQuote][0]+ '"');
+		$('.author').html('-'+tvQuoteList[tvQuote][1]);
+}
 
 // var movQuoteList[];
 
