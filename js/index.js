@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
 
-	$('.btn').click(function(){
+	$('.getQuote').click(function(){
 	getGenre();
 	});
 
@@ -69,20 +69,15 @@ $(document).ready(function() {
 
 				// function to share quote through a tweet
 
-
-				// $('.share').click(function(){
-				// 	if(!inIframe()) {
-    //   				openURL
-    //   				$('.share').attr('href', 'https://twitter.com/intent/tweet?text='+ encodeURIComponent('"' + currentQuote+ '" '+'-'+currentAuthor
-      					
-    //   					))};	
-				// });
-
-				$(".share").click(function(){
-     var textToTweet=$(".quote").text()+ ' -' + $(".autor").text();
-    
-      var tweetLink = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(textToTweet);
- window.open(tweetLink,'_blank');});
+				$('#tweet-this').on("click", function () {
+				 var textToTweet = $(".quote").text();
+				   if (textToTweet.length > 140) {
+				     alert("This Quote is over Twitter character capacity!")
+				   }
+				 var twtLink = 'https://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+				 window.open(twtLink,'_blank');
+   
+				 });
 
 	};
 
