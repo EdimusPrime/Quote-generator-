@@ -123,6 +123,16 @@ $(document).ready(function() {
 
 				$('.quote').html('"' + currentQuote + '"');
 				$('.author').html('-'+ currentAuthor);
+
+					$('#tweet-this').on("click", function () {
+				 var textToTweet = $(".quote").text();
+				   if (textToTweet.length > 140) {
+				     alert("This Quote is over Twitter character capacity!")
+				   }
+				 var twtLink = 'https://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+				 window.open(twtLink,'_blank');
+   
+				 });
 	}
 
 	function songQuotes(){
@@ -167,6 +177,16 @@ $(document).ready(function() {
 
 				$('.quote').html('"' + currentQuote + '"');
 				$('.author').html('-'+ currentAuthor);
+
+					$('#tweet-this').on("click", function () {
+				 var textToTweet = $(".quote").text();
+				   if (textToTweet.length > 140) {
+				     alert("This Quote is over Twitter character capacity!")
+				   }
+				 var twtLink = 'https://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+				 window.open(twtLink,'_blank');
+   
+				 });
 	}
 
 	function tvQuotes(){
@@ -207,6 +227,16 @@ $(document).ready(function() {
 
 				$('.quote').html('"' + currentQuote + '"');
 				$('.author').html('-'+ currentAuthor);
+
+					$('#tweet-this').on("click", function () {
+				 var textToTweet = $(".quote").text();
+				   if (textToTweet.length > 140) {
+				     alert("This Quote is over Twitter character capacity!")
+				   }
+				 var twtLink = 'https://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+				 window.open(twtLink,'_blank');
+   
+				 });
 	}
 
 
